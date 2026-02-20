@@ -3,21 +3,20 @@
 * 2026
 */
 
+# include <string.h>
 #include "header.h"
+
+void    ft_test_strcmp(char *s1, char *s2)
+{
+    int my_v = ft_strcmp(s1, s2);
+    int og_v = strcmp(s1, s2);
+
+    printf("MY: %d\n", my_v);
+    printf("OG: %d\n", og_v);
+}
 
 int main(int ac, char **av)
 {
-    int i = 0;
-    if (ac == 1)
-        return (1);
-    char dest[100] = {'A', 'B'};
-
-
-    i = ft_strlen(av[1]);
-
-
-    ft_strcpy(dest, av[2]);
-    printf("%d\n", i);
-    printf("%s\n", dest);
+    ft_test_strcmp(av[1], av[2]);
     return (0);
 }

@@ -4,7 +4,7 @@
 ##
 
 NAME=main
-OBJS = src/ft_strcpy.o src/ft_strlen.o
+OBJS = src/ft_strcpy.o src/ft_strlen.o src/ft_strcmp.o
 
 $(NAME): $(OBJS)
 	gcc -g -c src/main.c -o src/main.o -I header
